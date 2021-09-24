@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4779330464516621763}
   - component: {fileID: 2730914939974552898}
   - component: {fileID: 7119367571449039825}
+  - component: {fileID: 3997478161317004323}
   - component: {fileID: 400849221866422355}
-  - component: {fileID: 6848000709525134639}
   m_Layer: 0
   m_Name: DrinkButton
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3631088420874827008}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1500001, y: 0.001, z: 0.15}
+  m_LocalPosition: {x: -0.20000005, y: 0.001, z: 0.2}
   m_LocalScale: {x: 0.33, y: 1, z: 0.33}
   m_Children:
   - {fileID: 58633435432176860}
@@ -57,7 +57,7 @@ MonoBehaviour:
     e00: 0.33
     e01: 0
     e02: 0
-    e03: 3.85
+    e03: 3.8
     e10: 0
     e11: 1
     e12: 0
@@ -65,7 +65,7 @@ MonoBehaviour:
     e20: 0
     e21: 0
     e22: 0.33
-    e23: 0.15
+    e23: 0.2
     e30: 0
     e31: 0
     e32: 0
@@ -125,15 +125,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &400849221866422355
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3631088420874827008}
-  m_Mesh: {fileID: 0}
---- !u!114 &6848000709525134639
+--- !u!114 &3997478161317004323
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,10 +134,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 3631088420874827008}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7dc32e71ee537349a0ae15cb7459491, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d706a2187eee614e855c620cd613693, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Obj: {fileID: 4096547436821649435}
+  Obj: {fileID: 3829703058918768446}
+  fill: {fileID: 4096547435501981933}
+  Colors:
+  - {fileID: 2100000, guid: f5b0030c51d43b846ad9c3c6e8c888c7, type: 2}
+  - {fileID: 2100000, guid: a99f839906c3a4547b642930320d6feb, type: 2}
+  - {fileID: 2100000, guid: 9378d5c7935efc844b5d7e87f7d6559a, type: 2}
+--- !u!33 &400849221866422355
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3631088420874827008}
+  m_Mesh: {fileID: 0}
+--- !u!1 &3829703058918768446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3829703058918768433}
+  m_Layer: 0
+  m_Name: DrinkHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3829703058918768433
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3829703058918768446}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4096547436821649434}
+  m_Father: {fileID: 4096547436496107645}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4096547435501981933
 GameObject:
   m_ObjectHideFlags: 0
@@ -370,7 +406,7 @@ Transform:
   m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4096547436821649434}
+  - {fileID: 3829703058918768433}
   - {fileID: 7183770851938468710}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -598,16 +634,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4096547436821649435}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.495, z: 0}
+  m_LocalRotation: {x: 0.1099945, y: 0, z: 0, w: 0.9939322}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.3, z: 0.5}
   m_Children:
   - {fileID: 4096547435755331858}
   - {fileID: 4096547435501981932}
   - {fileID: 4096547436539161074}
-  m_Father: {fileID: 4096547436496107645}
+  m_Father: {fileID: 3829703058918768433}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.63, y: 0, z: 0}
 --- !u!33 &4096547436821649415
 MeshFilter:
   m_ObjectHideFlags: 0
